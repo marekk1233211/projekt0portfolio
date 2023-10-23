@@ -1,0 +1,61 @@
+@import "../../global.scss";
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 45vh;
+  color: $color-light;
+}
+.formWrapper > * {
+  flex-basis: 12.5%;
+  width: 65vw;
+}
+.formWrapper textarea {
+  flex-basis: 25%;
+}
+.btnWrapper {
+  flex-basis: 65%;
+}
+.socialMediaWrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.socialMediaWrapper a {
+  color: $color-light;
+  text-decoration: none;
+}
+@media (orientation: landscape) {
+  .formWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    // min-height: 110vh;
+  }
+  .formWrapper > * {
+    flex-basis: 15%;
+    height: 5vh;
+    padding: 5px;
+    border-radius: 25px;
+  }
+  .formWrapper textarea {
+    flex-basis: 90%;
+    padding: 20px;
+    height: 15vh;
+  }
+  .btnWrapper {
+    flex-basis: 50%;
+  }
+  .socialMediaWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1025px) {
+  .socialMediaWrapper > * {
+    flex-basis: 50%;
+  }
+}

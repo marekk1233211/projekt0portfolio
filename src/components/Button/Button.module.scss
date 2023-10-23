@@ -1,0 +1,11 @@
+@import "../../global.scss";
+.btn {
+  //   flex-basis: 25%;
+  padding: 15px 25px 15px 25px;
+  background-color: $color-main;
+  color: $color-light;
+  border: 0px;
+  border-radius: 25px;
+  font-family: $font-h1;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+@import "../../global.scss";
+.motivate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   background-image: url("../../img/mario-g06b8270cc_1920.jpg");
+  background-size: cover;
+  height: 35vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  opacity: 0;
+}
+.container:hover {
+  opacity: 1;
+}
+.title {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  color: $color-light;
+}
+.goodCompany {
+  background-image: url("../../img/mario-g06b8270cc_1920.jpg");
+}
+.visibleResults {
+  background-image: url("../../img/rabbit-pulling-carrot-gbcf5fddbc_1280.png");
+}
+.workFromAnywhere {
+  background-image: url("../../img//cartoon-g1e017bdcf_1920.png");
+}
+@media (orientation: landscape) {
+  .motivate {
+    height: 55vh;
+  }
+  .container {
+    height: 75%;
+  }
+  .container {
+    flex-basis: 75%;
+  }
+}

@@ -1,0 +1,41 @@
+@import "./global.scss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-h2;
+}
+
+///// intro
+.intro {
+  padding: 48px 0;
+  font-size: 24px;
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+  font-family: $font-h2;
+}
+@media (orientation: landscape) {
+  .wrapper {
+    display: flex;
+  }
+  .motivateWrapper {
+    flex-basis: 33%;
+  }
+  .wrapper2 {
+    display: flex;
+  }
+  .motivateWrapper2 {
+    flex-basis: 99%;
+  }
+}

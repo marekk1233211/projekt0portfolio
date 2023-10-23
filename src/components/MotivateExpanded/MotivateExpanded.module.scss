@@ -1,0 +1,27 @@
+@import "../../global.scss";
+.goodCompany {
+  background-image: url("../../img/mario-g06b8270cc_1920.jpg");
+  background-size: cover;
+}
+.visibleResults {
+  background-image: url("../../img/rabbit-pulling-carrot-gbcf5fddbc_1280.png");
+  background-size: cover;
+}
+.workFromAnywhere {
+  background-image: url("../../img//cartoon-g1e017bdcf_1920.png");
+  background-size: cover;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 55vh;
+  width: 65vw;
+  z-index: 9999;
+}
+.wrapper > p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: $color-light;
+  padding: 15px 25px;
+}
